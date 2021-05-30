@@ -65,7 +65,7 @@ export default class App extends Component {
             <li>Type : {pokemon.types[0]['type'].name}</li>
             <li>Weight : {pokemon.weight}   Height: {pokemon.height} </li>
             <li>Ability 1 : {pokemon.abilities[0].ability.name}</li>
-            <li>Ability 2 : {pokemon.abilities[1].ability.name}</li>
+            {/* <li>Ability 2 : {pokemon.abilities[1].ability.name}</li> */}
             </ul>
             </div>
             ) : (            
