@@ -21,7 +21,7 @@ export default class App extends Component {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${this.state.query.toLocaleLowerCase()}`)
         const data = await res.json();
         // console.log(res);
-        console.log('data',data);
+        //console.log('data',data);
         this.setState({
           pokemon:data,
           err:null
@@ -32,7 +32,7 @@ export default class App extends Component {
         pokemon:null,
         err
       })
-      console.log('error',err)
+      //console.log('error',err)
     }
   }
 
@@ -47,7 +47,7 @@ export default class App extends Component {
 
   render() {
     let{query, pokemon, err} = this.state;
-    console.log('query',this.state.query,query)
+    //console.log('query',this.state.query,query)
 
     return (
           <>
